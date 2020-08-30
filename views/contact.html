@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="FR" dir="ltr">
+   <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge" />
+       <title>CV - Martiretti Fabien</title>
+       <!-- Icone pour le titre -->
+       <link rel="icon" href="assets/icon/sticky-note-regular.svg" type="image/icon type">
+       <!-- Police d'écriture -->
+       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+       <!-- Font Awesome -->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+       <!-- Google Fonts Roboto -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+       <!-- Bootstrap core CSS -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" />
+       <!-- Material Design Bootstrap -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet" />
+       <!-- Your custom styles (optional) -->
+       <link rel="stylesheet" href="../assets/css/style.css" />
+   </head>
+   <body>
+       <!-- Hauteur du container 90% de la fenêtre -->
+       <div class="container-md container-fluid bg-dark my-5" style="height: 90vh">
+            <!-- Row qui prends 100% de la hauteur du parent -->
+            <div class="row h-100">
+                <!-- Marges Y automatiques -->
+                <nav class="text-white col-md-1 my-auto">
+                    <ul class="p-0">
+                        <li class="my-4"><a href="../index.html"><i class="far fa-user fa-2x"></i></a></li>
+                        <li class="my-4 active"><a href="contact.html"><i class="fas fa-phone fa-2x"></i></a></li>
+                        <li class="my-4"><a href="formations.html"><i class="far fa-clipboard fa-2x"></i></a></li>
+                        <li class="my-4"><a href="skills.html"><i class="fas fa-wallet fa-2x"></i></a></li>
+                        <li class="my-4"><a href="#"><i class="fas fa-glasses fa-2x"></i></a></li>
+                    </ul>
+                </nav>
+                <div id="scrollArea" class="col-md-11 h-100 text-white p-5">
+                    <h1 class="text-center mb-5">Me contacter</h1>
+                    <form action="mailto:martiretti.fabien@gmail.com" method="post" enctype="text/plain" class="row">
+                        <div class="form-group col-6">
+                            <label for="firstname">Prénom :</label>
+                            <input class="form-control" type="text" id="firstname" placeholder="Ex : Jean" size="30" required />
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="lastname">Nom :</label>
+                            <input class="form-control" type="text" id="lastname" placeholder="Ex : Dupond" size="30" required />
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="mail">Entrez votre adresse mail : </label>
+                            <input oninput="mailCheck(this)" type="email" name="mail" id="mail" placeholder="Ex : jean.dupond@gmail.com" class="form-control" />
+                            <p class="text-danger text-center"></p>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="subject">Objet :</label>
+                            <input class="form-control" type="text" id="subject" placeholder="Ex : réponse à votre candidature" size="30" required />
+                        </div>
+                        <div class="form-group col-12 title">
+                            <label for="message">Votre message : </label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit" name="sendMail" id="sendMail"><i class="fas fa-envelope"></i> Envoyer le mail</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       </div>
+       <!-- End your project here-->
+       <!-- jQuery -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <!-- Bootstrap tooltips -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+       <!-- Bootstrap core JavaScript -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <!-- MDB core JavaScript -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+       <!-- Your custom scripts (optional) -->
+       <script type="text/javascript" src="assets/js/script.js"></script>
+       <script>//regex mail
+        function mailCheck(mail){
+            var mailRegex = /^([a-z0-9-.]{1,255})@([a-z0-9-.]{1,255}).([a-z]{1,10})$/;
+             if (mailRegex.test(mail.value) == true) {
+                mail.style.borderColor = 'green';
+             }
+             else if (mailRegex.test(mail.value) == false) {
+                mail.style.borderColor = 'red';
+             }
+             else{
+                mail.style.borderColor = 'black';
+             }
+        }</script>
+   </body>
+</html>

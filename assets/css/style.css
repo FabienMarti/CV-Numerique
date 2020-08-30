@@ -1,0 +1,51 @@
+body{
+    background-color: black;
+    font-family: 'Roboto Slab', serif;
+}
+nav ul{
+    text-align: center;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+#myPicture{
+    background-image: url('../img/Bosco.jpg');
+    background-size: cover;
+}
+#scrollArea {
+    background-color: #212121;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#scrollArea::-webkit-scrollbar-track
+{
+    background-color: #F5F5F5;
+}
+
+#scrollArea::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#scrollArea::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+.title{
+    color : #51BA82;
+}
+hr{
+    background-color : #737476;
+}
+.text-color{
+    color : #737476;
+}
+.active{
+    color : #51BA82;
+}
