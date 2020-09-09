@@ -5,7 +5,7 @@ body{
 nav ul{
     text-align: center;
 }
-nav li{
+li{
     list-style: none;
 }
 nav a{
@@ -48,4 +48,7 @@ hr{
 }
 .active{
     color : #51BA82;
+}
+#projects li{
+    margin: 20px 0;
 }
