@@ -35,34 +35,17 @@
                         <li class="my-4"><a href="projects.html"><i class="fas fa-glasses fa-2x"></i></a></li>
                     </ul>
                 </nav>
-                <div id="scrollArea" class="col-md-11 h-100 text-white p-5">
+                <div class="col-md-11 h-100 text-white p-5">
                     <h1 class="text-center mb-5">Me contacter</h1>
-                    <form action="mailto:martiretti.fabien@gmail.com" method="post" enctype="text/plain" class="row">
-                        <div class="form-group col-6">
-                            <label for="firstname">Prénom :</label>
-                            <input class="form-control" type="text" id="firstname" placeholder="Ex : Jean" size="30" required />
-                        </div>
-                        <div class="form-group col-6">
-                            <label for="lastname">Nom :</label>
-                            <input class="form-control" type="text" id="lastname" placeholder="Ex : Dupond" size="30" required />
-                        </div>
-                        <div class="form-group col-6">
-                            <label for="mail">Entrez votre adresse mail : </label>
-                            <input oninput="mailCheck(this)" type="email" name="mail" id="mail" placeholder="Ex : jean.dupond@gmail.com" class="form-control" />
-                            <p class="text-danger text-center"></p>
-                        </div>
-                        <div class="form-group col-6">
-                            <label for="subject">Objet :</label>
-                            <input class="form-control" type="text" id="subject" placeholder="Ex : réponse à votre candidature" size="30" required />
-                        </div>
-                        <div class="form-group col-12 title">
-                            <label for="message">Votre message : </label>
-                            <textarea class="form-control" id="message" rows="5"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit" name="sendMail" id="sendMail"><i class="fas fa-envelope"></i> Envoyer le mail</button>
-                        </div>
-                    </form>
+                    <p>Vous pouvez le contacter par email à l'adresse suivante : <a href="mailto:martiretti.fabien@gmail.com">martiretti.fabien@gmail.com</a></p>
+                    <p>Par téléphone, au : <a href="tel:+33786751988"> 07.86.75.19.88</a></p>
+                    <p>Ou encore par voie postale :</p>
+                    <ul>
+                        <li>Martiretti Fabien</li>
+                        <li>4 rue Etienne Dolet</li>
+                        <li>60100, CREIL</li>
+                    </ul>
+
                 </div>
             </div>
        </div>
@@ -77,18 +60,5 @@
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
        <!-- Your custom scripts (optional) -->
        <script type="text/javascript" src="assets/js/script.js"></script>
-       <script>//regex mail
-        function mailCheck(mail){
-            var mailRegex = /^([a-z0-9-.]{1,255})@([a-z0-9-.]{1,255}).([a-z]{1,10})$/;
-             if (mailRegex.test(mail.value) == true) {
-                mail.style.borderColor = 'green';
-             }
-             else if (mailRegex.test(mail.value) == false) {
-                mail.style.borderColor = 'red';
-             }
-             else{
-                mail.style.borderColor = 'black';
-             }
-        }</script>
    </body>
 </html>
