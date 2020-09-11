@@ -1,6 +1,5 @@
-//Script pour la scrollBar
-$(document).ready(function () {
-    if (!$.browser.webkit) {
-        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
-    }
-});
+//Script pour remonter en haut de la page
+
+function backToTop(){
+    window.scrollTo(0, 0);
+}

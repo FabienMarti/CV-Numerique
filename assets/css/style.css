@@ -1,6 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     font-family: 'Roboto Slab', serif;
+}
+#arrowToTop{
+    color: black;
+}
+main{
+    height: 90vh;
+}
+#myPhoto{
+    height: 250px;
 }
 nav ul{
     text-align: center;
@@ -16,27 +28,7 @@ nav a{
     background-image: url('../img/Bosco.jpg');
     background-size: cover;
 }
-#scrollArea {
-    background-color: #212121;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-#scrollArea::-webkit-scrollbar-track
-{
-    background-color: #F5F5F5;
-}
 
-#scrollArea::-webkit-scrollbar
-{
-    width: 10px;
-    background-color: #F5F5F5;
-}
-
-#scrollArea::-webkit-scrollbar-thumb
-{
-    background-color: #000000;
-    border: 2px solid #555555;
-}
 .title{
     color : #51BA82;
 }
@@ -51,4 +43,19 @@ hr{
 }
 #projects li{
     margin: 20px 0;
+}
+
+/* bootstrap 'md' 768px */
+@media (max-width: 768px) { 
+    main{
+        height: auto;
+    }
+
+    nav li{
+        display: inline;
+        text-align: center;
+        padding: 10px ;
+        margin: 0 0 0 0;
+    }
+
 }
