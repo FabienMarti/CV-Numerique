@@ -55,6 +55,9 @@
                     </ul>
                 </div>
             </div>
+            <div class="text-center">
+                <i id="arrowToTop" onclick="backToTop()" class="fas fa-arrow-up fa-3x d-block d-md-none"></i>
+             </div>
         </main>
        <!-- End your project here-->
        <!-- jQuery -->
@@ -67,18 +70,5 @@
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
        <!-- Your custom scripts (optional) -->
        <script type="text/javascript" src="assets/js/script.js"></script>
-       <script>//regex mail
-        function mailCheck(mail){
-            var mailRegex = /^([a-z0-9-.]{1,255})@([a-z0-9-.]{1,255}).([a-z]{1,10})$/;
-             if (mailRegex.test(mail.value) == true) {
-                mail.style.borderColor = 'green';
-             }
-             else if (mailRegex.test(mail.value) == false) {
-                mail.style.borderColor = 'red';
-             }
-             else{
-                mail.style.borderColor = 'black';
-             }
-        }</script>
    </body>
 </html>
