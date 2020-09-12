@@ -9,7 +9,7 @@ body{
     color: black;
 }
 main{
-    height: 90vh;
+    padding: 20px 0;
 }
 #myPhoto{
     height: 250px;
