@@ -28,7 +28,10 @@ nav a{
     background-image: url('../img/Bosco.jpg');
     background-size: cover;
 }
-
+#projects li{
+    margin : 10px 0 !important;
+    list-style: square;
+}
 .title{
     color : #51BA82;
 }
